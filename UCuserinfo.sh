@@ -1,10 +1,10 @@
 #!/bin/bash -x
 shopt -s extglob
-read -p "Enter the Email  :" lastname
-pat='^[a-zA-Z]{3,}$'
-if [[ $lastname =~ $pat ]] #+
+read -p "Enter the Email  :" Email
+pat='^[a-zA-Z0-9]+([.+-_][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.]{1}[a-z]{2,4}([.][a-z]{2})*$'
+if [[ $Email =~ $pat ]] #+
 then
-        echo "user lastname is valid"
+        echo "user Email is valid"
 else
-        echo " user lastname not valid"
+        echo " user Email not valid"
 fi
