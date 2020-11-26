@@ -8,7 +8,7 @@ then
 else
         echo " user firstname not valid"
 fi
-read -p "Enter the laststname  :" laststtname
+read -p "Enter the lastname  :" lastname
 pat='^[a-zA-Z]{3,}$'
 if [[ $lastname =~ $pat ]] #+
 then
