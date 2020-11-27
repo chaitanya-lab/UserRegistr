@@ -34,7 +34,7 @@ else
 fi
 echo "enter the PASSWORD"
 read s
-if [[ ${#s} -ge 6 && "$s" == *[A-Z]* && "$s" == *[a-z]* && "$s" == *[0-9]* && "$s" == *['@*#%']* ]]
+if [[ ${#s} -ge 8 && "$s" == *[A-Z]* && "$s" == *[a-z]* && "$s" == *[0-9]* && "$s" == *['@*#%']* ]]
 then
         echo "user password is valid"
 else
