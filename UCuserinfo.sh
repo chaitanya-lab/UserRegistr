@@ -32,9 +32,9 @@ then
 else
         echo " user mobilenumber not valid"
 fi
-read -p "Enter the password:" pass
-pat='^(?=.*?[[:upper:]])(?=.*?[[:lower:]])(?=.*?[0-9]{1,}).{7,}$'
-if [[ $pass =~ $pat ]] #+
+echo "enter the PASSWORD"
+read s
+if [[ ${#s} -ge 6 && "$s" == *[A-Z]* && "$s" == *[a-z]* && "$s" == *[0-9]* ]]
 then
         echo "user password is valid"
 else
